@@ -37,8 +37,8 @@ var maxNumberOfBalloons = function (text) {
     }
   }
 
-  // balloon has 2 o's and 2 l's 
-  // so each set of o's and l's count as 1 iteration of balloon
+  // 'balloon' has 2 o's and 2 l's 
+  // so each set of o's and l's count as 1 iteration of 'balloon'
 
   balCount['o'] = Math.floor(balCount['o'] / 2)
   balCount['l'] = Math.floor(balCount['l'] / 2);
