@@ -1,7 +1,7 @@
 /*
 3. Longest Substring Without Repeating Characters
 
-(This current approach is the brute force method)
+THIS SOLUTION HAS BOTH OPTIMIZED AND BRUTE FORCE APPROACHES
 
 Given a string, find the length of the longest substring without 
 repeating characters.
@@ -24,66 +24,91 @@ Explanation: The answer is "wke", with the length of 3.
         subsequence and not a substring.
 */
 
-/**
- * @param {string} s
- * @return {number}
- */
+// THIS IS THE OPTIMIZED APPROACH
+
 var lengthOfLongestSubstring = function (s) {
-  let letterTracker = {};
-  let maxLength = 0;
-  let subString = [];
-
-  // edge case empty string
-  if (s.length === 0) return 0;
-
-  for (let i = 0; i < s.length; i++) {
-    // letterTracker keeps track of unique substrings 
-
-    if (letterTracker[s[i]] === undefined) {
-
-      subString.push(s[i]);
-
-      letterTracker = {};
-
-      for (let j = 0; j < subString.length; j++) {
-        letterTracker[subString[j]] = j;
-      }
-
-      // update maxLength while subString is still unique
-
-      if (subString.length > maxLength) {
-        maxLength = subString.length;
-      }
-
+  let maxLength = 0; 
+  let seen = new Set();
+  let start = 0; 
+  let end = 0; 
+  
+  while (start < s.length && end < s.length) {    
+    if (!seen.has(s[end])) {
+      seen.add(s[end]);
+      maxLength = Math.max(maxLength, end - start + 1);
+      end++;
     } else {
-      // to avoid deleting the wrong character in subString
-      // enforce check that the letter we're on is the same
-      // as the first character in subString
-
-      // also, splice(0, 0) results in no change
-      if (subString[0] === s[i]) {
-        subString.shift();
-        delete letterTracker[s[i]];
-      } else {
-        subString.splice(0, letterTracker[s[i]] + 1);
-      }
-
-      // next unique subString starts with the 'repeated value' we're on 
-      subString.push(s[i]);
-      
-      // items in letterTracker need to match subString
-      // this means which letters are kept and 
-      // and the indexes they are located at
-
-      letterTracker = {};
-      for (let j = 0; j < subString.length; j++) {
-        letterTracker[subString[j]] = j;
-      }
+      // once you have a repeat, need to make window smaller
+      // it is ok to have start and end on same element
+      // eg pwwkew
+      // only increment end when
+      // everything in the window is unique
+      seen.delete(s[start]);
+      start++;
     }
   }
-
+  
   return maxLength;
 };
+
+// THIS IS THE BRUTE FORCE APPROACH
+
+// var lengthOfLongestSubstring = function (s) {
+//   let letterTracker = {};
+//   let maxLength = 0;
+//   let subString = [];
+
+//   // edge case empty string
+//   if (s.length === 0) return 0;
+
+//   for (let i = 0; i < s.length; i++) {
+//     // letterTracker keeps track of unique substrings 
+
+//     if (letterTracker[s[i]] === undefined) {
+
+//       subString.push(s[i]);
+
+//       letterTracker = {};
+
+//       for (let j = 0; j < subString.length; j++) {
+//         letterTracker[subString[j]] = j;
+//       }
+
+//       // update maxLength while subString is still unique
+
+//       if (subString.length > maxLength) {
+//         maxLength = subString.length;
+//       }
+
+//     } else {
+//       // to avoid deleting the wrong character in subString
+//       // enforce check that the letter we're on is the same
+//       // as the first character in subString
+
+//       // also, splice(0, 0) results in no change
+//       if (subString[0] === s[i]) {
+//         subString.shift();
+//         delete letterTracker[s[i]];
+//       } else {
+//         subString.splice(0, letterTracker[s[i]] + 1);
+//       }
+
+//       // next unique subString starts with the 'repeated value' we're on 
+//       subString.push(s[i]);
+      
+//       // items in letterTracker need to match subString
+//       // this means which letters are kept and 
+//       // and the indexes they are located at
+
+//       letterTracker = {};
+//       for (let j = 0; j < subString.length; j++) {
+//         letterTracker[subString[j]] = j;
+//       }
+//     }
+//   }
+
+//   return maxLength;
+// };
 
 
 // to test my code 
