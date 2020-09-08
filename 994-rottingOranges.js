@@ -51,6 +51,11 @@ var orangesRotting = function (grid) {
       if (grid[i][j] === 1) {
         freshOranges++;
       } else if (grid[i][j] === 2) {
+        // i acts as y coordinate
+        // j acts as x coordinate
+        // leave as is, don't switch order ie [j, i]
+          // it'll get confusing if you try to do [x, y] 
+          // because y goes first in the grid
         rottenOranges.push([i, j]);
       }
     }
@@ -66,6 +71,8 @@ var orangesRotting = function (grid) {
     for (let i = 0; i < rottenInCurrLevel; i++) {
       let currOrange = rottenOranges.shift();
       let [y, x] = currOrange;
+
+      // only 1 coordinate changes at a time in 4 directions
 
       if (y - 1 >= 0 && grid[y - 1][x] === 1) {
         grid[y - 1][x] = 2;
