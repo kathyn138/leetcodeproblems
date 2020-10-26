@@ -57,3 +57,8 @@ var validMountainArray = function (A) {
 
   return true;
 };
+
+// another approach is to have left and right pointers
+// at the end, 
+// return true if left === right && left !== 0 
+// && right !== A.length - 1
