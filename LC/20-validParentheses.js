@@ -31,6 +31,8 @@ Input: "{[]}"
 Output: true
 */
 
+// comparison approach
+
 var isValid = function (s) {
   let key = {
     ")": "(",
@@ -60,4 +62,31 @@ var isValid = function (s) {
   // compareArr should be empty at the end
 
   return compareArr.length === 0;
+};
+
+// stack approach
+// stack keeps track of the open brackets
+
+var isValid = function(s) {
+  if (s.length === 1) return false; 
+  
+  let pairs = {
+    '(': ')',
+    '{': '}',
+    '[': ']'
+  };
+  
+  let stack = [];
+  
+  for (char of s) {
+    if (pairs[char]) {
+      stack.push(char);
+      continue; 
+    }
+    
+    let lastChar = stack.pop();
+    if (pairs[lastChar] !== char) return false; 
+  }
+  
+  return stack.length === 0;
 };
