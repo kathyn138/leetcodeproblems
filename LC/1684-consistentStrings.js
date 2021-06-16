@@ -9,8 +9,6 @@ appear in the string allowed.
 Return the number of consistent strings in the array 
 words.
 
- 
-
 Example 1:
 Input: allowed = "ab", words = ["ad","bd","aaab","baa",
 "badab"]
