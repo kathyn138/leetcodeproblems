@@ -28,6 +28,43 @@ Output: -1
  * @param {number} target
  * @return {number}
  */
+// NEWER SOLUTION 
+
+var search = function (nums, target) {
+  // binary search 
+  let head = 0;
+  let tail = nums.length - 1;
+
+  while (head <= tail) {
+    let mid = Math.floor((tail + head) / 2);
+
+    if (nums[mid] === target) return mid;
+
+    // check if left side is sorted 
+    if (nums[head] <= nums[mid]) {
+      // check if target is on left side
+      if (target <= nums[mid] && nums[head] <= target) {
+        tail = mid - 1; 
+      } else {
+        // target is on right side
+        head = mid + 1;
+      }
+    } else {
+      // else, right side is sorted
+      if (target >= nums[mid] && target <= nums[tail]) {
+        // target is on right side
+        head = mid + 1;
+      } else {
+        // target is on the left side
+        tail = mid - 1; 
+      }
+    }
+  }
+
+  return -1;
+};
+
+// OLDER SOLUTION
 var search = function (nums, target) {
   if (nums.length === 0) return -1;
 
