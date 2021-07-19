@@ -128,7 +128,7 @@
   - [ ] [Same Tree](https://leetcode.com/problems/same-tree/)
   - [ ] [Invert/Flip Binary Tree](https://leetcode.com/problems/invert-binary-tree/)
   - [ ] [Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/)
-  - [ ] [Lowest Common Ancestor of BST](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)
+  - [x] [Lowest Common Ancestor of BST](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)
 - Medium
   - [ ] [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)
   - [ ] [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
