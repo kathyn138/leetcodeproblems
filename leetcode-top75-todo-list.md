@@ -76,7 +76,7 @@
   - [ ] [Meeting Rooms (Leetcode Premium)](https://leetcode.com/problems/meeting-rooms/)
 - Medium
   - [ ] [Meeting Rooms II (Leetcode Premium)](https://leetcode.com/problems/meeting-rooms-ii/)
-  - [ ] [Merge Intervals](https://leetcode.com/problems/merge-intervals/)
+  - [x] [Merge Intervals](https://leetcode.com/problems/merge-intervals/)
   - [ ] [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)
 - Hard
   - [ ] [Insert Interval](https://leetcode.com/problems/insert-interval/)
