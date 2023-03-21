@@ -132,7 +132,7 @@
 - Medium
   - [ ] [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)
   - [ ] [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
-  - [ ] [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)
+  - [x] [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)
   - [ ] [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)
   - [x] [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)
   - [ ] [Add and Search Word](https://leetcode.com/problems/add-and-search-word-data-structure-design/)
