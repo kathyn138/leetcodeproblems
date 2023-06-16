@@ -41,6 +41,36 @@ Output: 42
  * @param {TreeNode} root
  * @return {number}
  */
+
+// 2023 SOLUTION 
+// runtime is O(n) and memory is O(h) with h being height of tree
+var maxPathSum = function(root) {
+  let sum = root.val; 
+
+  function computeForNode(node) {
+    if (!node) return 0; 
+
+    let leftSum = computeForNode(node.left);
+    let rightSum = computeForNode(node.right);
+
+    // with path, can't split twice eg entire tree of example 2
+    // can only split once + split occurs at top of subtree
+    let path = Math.max(node.val, node.val + leftSum, node.val + rightSum);
+    
+    // with node.val + leftSum + rightSum, 
+    // calculates max with split starting at top of subtree
+    // eg current node with its entire sub left and right trees
+    sum = Math.max(sum, node.val + leftSum + rightSum, path);
+    
+    return path;
+  }
+
+  computeForNode(root);
+
+  return sum;
+};
+
+// 2020 SOLUTION
 var maxPathSum = function (root) {
   let sum = root.val;
 
