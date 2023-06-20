@@ -139,7 +139,7 @@
 - Hard
   - [ ] [Word Search II](https://leetcode.com/problems/word-search-ii/)
   - [x] [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/)
-  - [] [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)
+  - [x] [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)
 
 
 ## Heap
