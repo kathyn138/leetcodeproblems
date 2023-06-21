@@ -114,7 +114,7 @@
   - [ ] [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
   - [ ] [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
   - [ ] [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)
-  - [ ] [Group Anagrams](https://leetcode.com/problems/group-anagrams/)
+  - [x] [Group Anagrams](https://leetcode.com/problems/group-anagrams/)
   - [ ] [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)
   - [ ] [Encode and Decode Strings (Leetcode Premium)](https://leetcode.com/problems/encode-and-decode-strings/)
 - Hard
