@@ -3,7 +3,7 @@
 ## Array
 
 - Easy
-  - [ ] [Two Sum](https://leetcode.com/problems/two-sum/)
+  - [x] [Two Sum](https://leetcode.com/problems/two-sum/)
   - [x] [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
   - [x] [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)
   - [x] [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
