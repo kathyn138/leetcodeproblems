@@ -145,7 +145,7 @@
 ## Heap
 
 - Medium
-  - [ ] [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)
+  - [x] [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)
 - Hard
   - [ ] [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)
   - [ ] [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/)
