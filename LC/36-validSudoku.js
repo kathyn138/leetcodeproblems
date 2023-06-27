@@ -50,6 +50,53 @@ Constraints:
 - board[i][j] is a digit or '.'.
 */
 
+// 2023 solution
+// more concise and divides board into subboxes with coordinates 0 - 3
+var isValidSudoku = function(board) {
+  // divide board into 9 subboxes with coordinates that range 0 - 3
+  // coordinates is x then y 
+  // eg top left is 0-0 and bottom right is 2-2
+  let boxes = {
+  '0-0': new Set(),
+  '1-0': new Set(),
+  '2-0': new Set(),
+  '0-1': new Set(),
+  '1-1': new Set(),
+  '2-1': new Set(),
+  '0-2': new Set(),
+  '1-2': new Set(),
+  '2-2': new Set(),
+  };
+
+  for (let i = 0; i < 9; i++) {
+    let row = new Set();
+    let col = new Set();
+    let y = Math.floor(i / 3);
+
+    for (let j = 0; j < 9; j++) {
+      let currHorVal = board[i][j];
+      let currVertVal = board[j][i];
+      let x = Math.floor(j / 3);
+      let currBox = `${x}-${y}`;
+      
+
+      if (row.has(currHorVal) || col.has(currVertVal) || boxes[currBox].has(currHorVal)) return false; 
+
+      if (currHorVal !== ".") {
+        row.add(currHorVal);
+        boxes[currBox].add(currHorVal);
+      } 
+
+      if (currVertVal !== ".") {
+        col.add(currVertVal);
+      }
+    }
+  }
+
+  return true;
+};
+
+// 2021 solution
 var isValidSudoku = function (board) {
   // function to check 3x3 box
   function checkBox(board, startCol, startRow) {
