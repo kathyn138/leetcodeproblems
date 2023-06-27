@@ -116,7 +116,7 @@
   - [ ] [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)
   - [x] [Group Anagrams](https://leetcode.com/problems/group-anagrams/)
   - [ ] [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)
-  - [ ] [Encode and Decode Strings (Leetcode Premium)](https://leetcode.com/problems/encode-and-decode-strings/)
+  - [x] [Encode and Decode Strings (Leetcode Premium)](https://leetcode.com/problems/encode-and-decode-strings/)
 - Hard
   - [ ] [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)
 
