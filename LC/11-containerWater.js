@@ -16,6 +16,36 @@ Input: [1,8,6,2,5,4,8,3,7]
 Output: 49
 */
 
+// 2023 soln
+// two pointer
+
+var maxArea = function(height) {
+  let max = 0; 
+
+  // two pointer
+  let left = 0; 
+  let right = height.length - 1; 
+
+  while (left !== right && left < right) {
+    let currLength = right - left;
+    let limiterHeight = Math.min(height[left], height[right]);
+    let currArea = currLength * limiterHeight;
+    max = Math.max(max, currArea);
+    
+    // move the shorter one
+    // want tallest and longest
+    if (height[left] <= height[right]) {
+      left++;
+    } else {
+      right--;
+    }
+  }
+
+  return max;
+};
+
+
+// 2020 soln
 // greedy algorithm
 
 var maxArea = function (height) {
