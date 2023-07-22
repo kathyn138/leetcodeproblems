@@ -30,6 +30,38 @@ Constraints:
 * 0 <= prices[i] <= 104
 */
 
+// 2023 SOLN TWO POINTER
+
+var maxProfit = function(prices) {
+  let left = 0; 
+  // don't start from backwards
+  // can't do two pointers that way
+  let right = left + 1;
+  let maxProfit = 0; 
+
+  while (right < prices.length) {
+    let buy = prices[left];
+    let sell = prices[right];
+
+    let currProfit = sell - buy; 
+
+    if (currProfit > 0) maxProfit = Math.max(maxProfit, currProfit);
+
+    if (buy > sell) {
+      // want left to be at minimum
+      // if shift by just 1, could end up with high buy price
+      left = right;
+    } 
+
+    // regardless of what happens, increment right
+    right++;
+  }
+
+  return maxProfit;
+};
+
+// 2021 SOLN
+
 var maxProfit = function (prices) {
   // overall approach: want to find smallest # then biggest #
   // for this to work, need # that are bigger than smallest # 
