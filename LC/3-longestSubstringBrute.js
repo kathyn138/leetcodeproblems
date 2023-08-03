@@ -23,7 +23,29 @@ Explanation: The answer is "wke", with the length of 3.
         Note that the answer must be a substring, "pwke" is a 
         subsequence and not a substring.
 */
+// 2023 SOLUTION
 
+var lengthOfLongestSubstring = function(s) {
+  let counter = 0; 
+  let currSub = new Set();
+  let left = 0;
+
+  for (let right = 0; right < s.length; right++) {
+    while (currSub.has(s[right])) {
+      // need to keep deleting until no longer in currSub
+      // eg currSub abcbb
+      currSub.delete(s[left]);
+      left++;
+    }
+
+    currSub.add(s[right]);
+    counter = Math.max(counter, right - left + 1);
+  }
+
+  return counter;
+};
+
+// 2020 SOLUTION
 // THIS IS THE OPTIMIZED APPROACH
 
 var lengthOfLongestSubstring = function (s) {
