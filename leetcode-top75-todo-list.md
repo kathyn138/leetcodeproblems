@@ -118,7 +118,7 @@
   - [ ] [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)
   - [x] [Encode and Decode Strings (Leetcode Premium)](https://leetcode.com/problems/encode-and-decode-strings/)
 - Hard
-  - [ ] [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)
+  - [x] [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)
 
 
 ## Tree
