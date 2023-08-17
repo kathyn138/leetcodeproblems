@@ -36,8 +36,7 @@ MinStack.prototype.push = function (x) {
 };
 
 MinStack.prototype.pop = function () {
-  // do this first bc need top element
-  // cant access if popped off stack
+  // only want to remove from min array if last element is also top element
   if (this.top() === this.min[this.min.length - 1]) {
     this.min.pop();
   }
