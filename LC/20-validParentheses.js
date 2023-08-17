@@ -31,8 +31,38 @@ Input: "{[]}"
 Output: true
 */
 
-// comparison approach
 
+// 2023 approach
+var isValid = function(s) {
+  if (s.length === 1) return false;
+
+  let pairs = {
+    '(' : ')',
+    '{' : '}',
+    '[' : ']'
+  };
+
+  let stack = [];
+
+  for (let i = 0; i < s.length; i++) {
+    let currChar = s[i];
+
+    if (pairs[currChar]) {
+      stack.push(currChar)
+    } else {
+      let last = stack.pop();
+
+      if (pairs[last] !== currChar) return false;
+    }
+  }
+
+  return stack.length === 0;
+};
+
+
+
+// comparison approach
+// 2021 approach
 var isValid = function (s) {
   let key = {
     ")": "(",
