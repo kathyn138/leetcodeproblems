@@ -25,6 +25,36 @@ The value of each element in nums will be in the
 range [-9999, 9999].
 */
 
+// 2023 solution
+var search = function(nums, target) {
+  let left = 0; 
+  let right = nums.length - 1; 
+
+  while (left <= right) {
+    // don't use left + right / 2 bc it can overflow
+    // eg left = 50 and right = 80, mid would be 130
+    // better to use algo below
+    // also add left to it to start position from left
+    // eg left = 50 and right = 80, without add left, 
+    // mid would be 15
+    let mid = left + Math.floor(right - left / 2);
+    // add left separate from math.floor bc want whole number
+    // and starting from left
+    
+    if (nums[mid] === target) return mid;
+
+    if (nums[mid] < target) {
+      left = mid + 1;
+    } else {
+      right = mid - 1;
+    }
+  }
+
+  return -1;
+};
+
+
+// 2020 solution
 var search = function (nums, target) {
   return sortHelper(nums, target, 0, nums.length - 1);
 };
