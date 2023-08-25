@@ -23,7 +23,7 @@
 - Medium
   - [ ] [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
   - [ ] [Find Peak Element](https://leetcode.com/problems/find-peak-element/)
-  - [ ] [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
+  - [x] [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
 - Hard
   - [ ] [Find in Mountain Array](https://leetcode.com/problems/find-in-mountain-array/)
 
