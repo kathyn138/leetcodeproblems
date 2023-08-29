@@ -23,6 +23,52 @@ Output: 1->1->2->3->4->4
  * @param {ListNode} l2
  * @return {ListNode}
  */
+
+// 2023 soln
+var mergeTwoLists = function(list1, list2) {
+  let mergedList = new ListNode();
+  let newHead = mergedList;
+  let left = list1;
+  let right = list2;
+
+  // while both exist
+  while (left && right) {
+    // need temp placeholder for node to be added
+    let node; 
+
+    if (left.val < right.val) {
+      node = new ListNode(left.val, null);
+      // add node to mergedList
+      mergedList.next = node; 
+      // increment left
+      left = left.next;
+    } else {
+      node = new ListNode(right.val, null);
+      mergedList.next = node;
+      right = right.next;
+    }
+
+    // dont forget to increment mergedList to move along
+    mergedList = mergedList.next;
+  }
+
+  // if only 1 exists
+  // dont need while loop bc just attach rest
+  // need check both bc could both be ! aka end
+  if (!left && right) {
+    mergedList.next = right; 
+  }
+
+  if (!right && left) {
+    mergedList.next = left; 
+  }
+
+  // return newHead bc mergedList is last merged element
+  // return newHead.next bc newHead initializes with list node 0 
+  return newHead.next;
+};
+
+// 2019 soln 
 var mergeTwoLists = function (l1, l2) {
   if (!l1 || !l2) return l1 || l2;
 
