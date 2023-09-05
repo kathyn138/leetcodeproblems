@@ -19,7 +19,7 @@
 
 - Easy
   - [x] [First Bad Version](https://leetcode.com/problems/first-bad-version/)
-  - [ ] [Sqrt(x)](https://leetcode.com/problems/sqrtx/)
+  - [x] [Sqrt(x)](https://leetcode.com/problems/sqrtx/)
 - Medium
   - [ ] [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
   - [ ] [Find Peak Element](https://leetcode.com/problems/find-peak-element/)
