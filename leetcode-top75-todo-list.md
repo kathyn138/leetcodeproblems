@@ -111,7 +111,7 @@
   - [x] [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
   - [x] [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
 - Medium
-  - [ ] [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
+  - [x] [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
   - [x] [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
   - [x] [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)
   - [x] [Group Anagrams](https://leetcode.com/problems/group-anagrams/)
