@@ -75,11 +75,10 @@
 - Easy
   - [ ] [Meeting Rooms (Leetcode Premium)](https://leetcode.com/problems/meeting-rooms/)
 - Medium
+  - [x] [Insert Interval](https://leetcode.com/problems/insert-interval/)
   - [ ] [Meeting Rooms II (Leetcode Premium)](https://leetcode.com/problems/meeting-rooms-ii/)
   - [x] [Merge Intervals](https://leetcode.com/problems/merge-intervals/)
   - [ ] [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)
-- Hard
-  - [ ] [Insert Interval](https://leetcode.com/problems/insert-interval/)
 
 
 ## Linked List
