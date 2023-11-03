@@ -22,6 +22,35 @@ Constraints:
 - 0 <= starti <= endi <= 104
 */
 
+// 2023 SOLUTION
+var merge = function(intervals) {
+  // sort start values by ascending
+  intervals.sort((a, b) => a[0] - b[0]);
+  // stack approach keeps track of prev interval
+  let res = [intervals[0]];
+
+  // start at idx 1 bc res already has idx 0
+  for (let i = 1; i < intervals.length; i++) {
+    let prev = res.pop();
+    let prevStart = prev[0];
+    let prevEnd = prev[1];
+
+    let nextStart = intervals[i][0];
+    let nextEnd = intervals[i][1];
+
+    if ((nextStart > prevEnd)) {
+      res.push(prev);
+      res.push(intervals[i]);
+    } else {
+      let merged = [Math.min(prevStart, nextStart), Math.max(prevEnd, nextEnd)];
+      res.push(merged);;
+    }
+  }
+
+  return res;
+};
+
+// 2021 SOLUTION
 var merge = function (intervals) {
   if (intervals.length === 1) return intervals;
 
