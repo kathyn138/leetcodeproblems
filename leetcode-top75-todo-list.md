@@ -156,3 +156,10 @@
   - [ ] [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)
 - Hard
   - [ ] [N-Queens](https://leetcode.com/problems/n-queens/)
+
+
+# Leetcode Tracker Sheet
+
+| Problem | Difficulty | Solved First Time? (Y/N) | First Solve Date | Next Solve Date | Next Solve Date
+| -------- | ------- | ------- | ------- | ------- | ------- |
+| [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | 
