@@ -160,6 +160,7 @@
 
 # Leetcode Tracker Sheet
 
-| Problem | Difficulty | Solved First Time? (Y/N) | First Solve Date | Next Solve Date | Next Solve Date
-| -------- | ------- | ------- | ------- | ------- | ------- |
-| [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | 
+| Problem | Category | Difficulty | Solved First Time? (Y/N) | First Solve Date | Next Solve Date | Next Solve Date
+| -------- | ------- | ------- | ------- | ------- | ------- |  ------- |
+| [Two Sum](https://leetcode.com/problems/two-sum/) | Array | Easy | Y | 2/5/24
+| [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Sliding Window | Easy | N | 2/5/24
