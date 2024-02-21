@@ -17,6 +17,25 @@ You may assume the string contains only
 lowercase alphabets.
 */
 
+// 2024 soln
+var isAnagram = function(s, t) {
+  if (s.length !== t.length) return false;
+  let tracker = {};
+
+  for (let char of s) {
+    tracker[char] = (tracker[char] += 1) || 1;
+  }
+
+  for (let char of t) {
+    if (!tracker[char]) return false;
+    tracker[char]--; 
+  }
+
+  return true;
+};
+
+
+// 2023 soln
 var isAnagram = function (s, t) {
   if (s.length !== t.length) return false;
 
