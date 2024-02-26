@@ -1,3 +1,17 @@
+// 2024 soln
+var containsDuplicate = function(nums) {
+  let tracker = new Set();
+
+  for (let n of nums) {
+    if (tracker.has(n)) return true;
+
+    tracker.add(n);
+  }
+
+  return false;
+};
+
+// 2023 soln
 var containsDuplicate = function(nums) {
   let res = new Set();
 
