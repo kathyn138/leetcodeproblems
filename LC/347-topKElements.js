@@ -1,3 +1,51 @@
+// 2024 soln
+var topKFrequent = function(nums, k) {
+  if (nums.length === k) return nums;
+
+  // sort nums into buckets of how many times they occur
+  // eg bucket 1 has values that only occurred 1 time
+
+  let tracker = {};
+
+  for (let num of nums) {
+    tracker[num] = tracker[num] + 1 || 1;
+  }
+
+  let uniqueNums = Object.keys(tracker);
+
+  // initialize with undefined to avoid reference errors later
+  let buckets = Array(nums.length).fill(undefined);
+
+  for (let i = 0; i < uniqueNums.length; i++) {
+    let currNum = uniqueNums[i];
+    let numOccurances = tracker[currNum];
+    
+    if (buckets[numOccurances]) {
+      buckets[numOccurances].push(currNum);
+    } else {
+      buckets[numOccurances] = [currNum]
+    }
+  }
+
+  let res = [];
+
+  // do for loop instead of while to avoid reference errors
+  // also need to do inner for loop for pile inside buckets
+  for (let i = buckets.length - 1; i >= 0; i--) {
+    if (buckets[i]) {
+      let pile = buckets[i];
+      for (let n of pile) {
+        res.push(n);
+
+        if (res.length === k) return res;
+      }
+    }
+  }
+
+  return res;
+};
+
+// 2023 soln
 var topKFrequent = function(nums, k) {
   let count = {};
 
