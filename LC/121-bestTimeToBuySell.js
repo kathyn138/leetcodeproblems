@@ -62,19 +62,20 @@ var maxProfit = function(prices) {
 
 // python soln
 // def maxProfit(self, prices: List[int]) -> int:
-//         left = 0
-//         right = left + 1
+//         buy = 0
+//         sell = buy + 1
 //         max_profit = 0
 
-//         while left < right and right < len(prices):
-//           curr_profit = prices[right] - prices[left]
-//           max_profit = max(max_profit, curr_profit)
+//         while buy < sell and sell < len(prices):
+//           curr_profit = prices[sell] - prices[buy]
 
-//           if prices[right] < prices[left]:
-//             left = right
-          
-//           right += 1
-        
+//           if curr_profit < 0:
+//             buy = sell
+//           else:
+//             max_profit = max(max_profit, curr_profit)
+
+//           sell += 1  
+
 //         return max_profit
 
 // 2021 SOLN

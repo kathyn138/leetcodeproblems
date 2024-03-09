@@ -166,7 +166,7 @@
 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | Array | Easy | Y | 2/26/24
 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | Array | Med | N | 2/27/24
 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | Array | Med | N | 2/29/24
-| [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Sliding Window | Easy | N | 2/5/24
+| [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Sliding Window | Easy | N | 2/5/24 | 3/8/24
 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | String | Easy | Y | 2/20/24
 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | String | Easy | N | 2/22/24
 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | String | Easy | Y | 2/23/24
