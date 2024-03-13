@@ -1,3 +1,31 @@
+// 2024 soln
+var longestConsecutive = function(nums) {
+  // want to find first number of a sequence
+  // first won't have a left neighbor
+  // after u find it, want to check how long sequence goes on for
+
+  let numTracker = new Set(nums);
+  let longest = 0;
+
+  for (let n of nums) {
+    let currLen = 0;
+    // if does not have (n - 1), it means that n is start of sequence
+    // bc no left neighbor
+    if (!numTracker.has(n - 1)) {
+
+      // checks for following numbers
+      while (numTracker.has(n + currLen)) {
+        currLen++;
+      }
+
+      longest = Math.max(longest, currLen);
+    }
+  }
+
+  return longest;
+};
+
+// 2023 soln
 var longestConsecutive = function(nums) {
   if (!nums.length) return 0;
   let longest = 0;

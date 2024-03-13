@@ -168,6 +168,7 @@
 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | Array | Med | N | 2/29/24
 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | Array | Med | N | 3/11/24
 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | Array | Med | N | 3/12/24
+| [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | Array | Med | N | 3/12/24
 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Sliding Window | Easy | N | 2/5/24 | 3/8/24
 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | String | Easy | Y | 2/20/24
 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | String | Easy | N | 2/22/24
