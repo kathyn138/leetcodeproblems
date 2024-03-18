@@ -172,5 +172,6 @@
 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | Array | Med | N | 3/12/24
 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | Two Pointers | Easy | Y | 2/23/24
 | [Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | Two Pointers | Med | Y | 3/18/24
+| [3Sum](https://leetcode.com/problems/3sum/) | Two Pointers | Med | N | 3/18/24
 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | String | Easy | N | 2/22/24
 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Sliding Window | Easy | N | 2/5/24 | 3/8/24
