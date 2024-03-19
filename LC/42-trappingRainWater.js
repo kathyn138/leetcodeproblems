@@ -1,6 +1,38 @@
+// march 19, 2024 soln
+var trap = function(height) {
+  let water = 0; 
+  let left = 0; 
+  let right = height.length - 1;
+  let maxLeft = height[left];
+  let maxRight = height[right];
+
+  while (left < right) {
+    // want to get min of max left and max right
+    // once u get min, doesn't matter what other value is
+    // bc min is the limiting height
+    if (maxLeft < maxRight) {
+      let currWater = maxLeft - height[left];
+
+      if (currWater > 0) water += currWater;
+
+      left++;
+      maxLeft = Math.max(maxLeft, height[left]);
+    } else {
+      let currWater = maxRight - height[right];
+
+      if (currWater > 0) water += currWater;
+
+      right--;
+      maxRight = Math.max(maxRight, height[right]);
+    }
+  }
+
+  return water;
+};
+
+// 2023 soln
 // efficient soln
 // doesn't use O(n) memory
-
 var trap = function(height) {
   let water = 0; 
   let left = 0; 
