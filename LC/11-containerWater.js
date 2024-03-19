@@ -16,9 +16,28 @@ Input: [1,8,6,2,5,4,8,3,7]
 Output: 49
 */
 
-// 2023 soln
-// two pointer
+// march 19, 2024 soln
+var maxArea = function(height) {
+  let maxWater = 0; 
+  let left = 0; 
+  let right = height.length - 1; 
 
+  while (left < right) {
+    let limitingHeight = Math.min(height[left], height[right]);
+    let currWater = (right - left) * limitingHeight;
+    maxWater = Math.max(maxWater, currWater);
+
+    if (height[left] < height[right]) {
+      left++;
+    } else {
+      right--;
+    }
+  }
+
+  return maxWater;
+};
+
+// 2023 soln
 var maxArea = function(height) {
   let max = 0; 
 
