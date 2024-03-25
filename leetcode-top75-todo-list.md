@@ -177,3 +177,4 @@
 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) | Two Pointers | Hard | N | 3/19/24
 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | String | Easy | N | 2/22/24
 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Sliding Window | Easy | N | 2/5/24 | 3/8/24
+| [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Sliding Window | Med | N | 3/25/24
