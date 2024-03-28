@@ -1,3 +1,48 @@
+// march, 28, 2024 soln
+var checkInclusion = function(s1, s2) {
+  // automatic conditions
+  // order is important
+  if (!s1.length && !s2.length) return true;
+  if (!s1.length || !s2.length) return false;
+  if (s1.length > s2.length) return false;
+
+  let reqLen = s1.length;
+  let tracker = {};
+  let left = 0; 
+  let right = 0; 
+
+  for (let s of s1) {
+    tracker[s] = (tracker[s] || 0) + 1;
+  }
+
+  // want to do while loop so control when right gets updated
+  while (right < s2.length) {
+    // check right
+    if (tracker[s2[right]] > 0) reqLen--;
+    
+    // dec outside bc might be same letter but not part of req substr
+    tracker[s2[right]]--;
+
+    right++;
+
+    // check reqLen
+    if (!reqLen) return true;
+
+    // when window is bigger than s1 (by at most 1)
+    // left is used to keep track of window size + if in tracker
+    if (right - left === s1.length) {
+      if (tracker[s2[left]] >= 0) reqLen++;
+      
+      // increment outside bc might be same letter but not part of req substr
+      tracker[s2[left]]++;
+      left++;
+    }
+  }
+
+  return false;
+};
+
+// 2023 soln
 var checkInclusion = function(s1, s2) {
   // checks that would auto return
   if (!s1.length && !s2.length) return true;
