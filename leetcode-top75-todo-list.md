@@ -180,3 +180,4 @@
 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Sliding Window | Med | N | 3/25/24
 | [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) | Sliding Window | Med | N | 3/25/24
 | [Permutation in String](https://leetcode.com/problems/permutation-in-string) | Sliding Window | Med | N | 3/28/24
+| [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) | Sliding Window | Hard | N | 4/2/24
