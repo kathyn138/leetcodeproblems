@@ -183,3 +183,4 @@
 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) | Sliding Window | Hard | N | 4/2/24
 | [Employbee Bonus](https://leetcode.com/problems/employee-bonus/) | SQL | Easy | Y | 4/8/24
 | [Students and Examinations](https://leetcode.com/problems/students-and-examinations) | SQL | Easy | N | 4/8/24
+| [Manager >= 5 Direct Reports](hhttps://leetcode.com/problems/managers-with-at-least-5-direct-reports/) | SQL | Med | Y | 4/8/24
