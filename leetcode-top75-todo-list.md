@@ -187,3 +187,4 @@
 | [Confirmation Rate](https://leetcode.com/problems/confirmation-rate) | SQL | Med | N | 4/9/24
 | [Not Boring Movies](https://leetcode.com/problems/not-boring-movies) | SQL | Easy | Y | 4/9/24
 | [Average Selling Price](https://leetcode.com/problems/average-selling-price) | SQL | Easy | Y | 4/9/24
+| [Project Employees I](https://leetcode.com/problems/project-employees-i) | SQL | Easy | Y | 4/9/24
