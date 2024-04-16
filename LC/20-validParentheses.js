@@ -31,6 +31,30 @@ Input: "{[]}"
 Output: true
 */
 
+// april 15, 2024 soln
+var isValid = function(s) {
+  // stack is last in, first out
+  let tracker = {
+    '(': ')',
+    '[': ']',
+    '{': '}'
+  };
+
+  let stack = [];
+  
+  for (let i = 0; i < s.length; i++) {
+    if (tracker[s[i]]) {
+      stack.push(s[i]);
+    } else {
+      let prev = stack.pop();
+
+      if (tracker[prev] != s[i]) return false;
+    }
+  }
+
+  return stack.length === 0;
+ };
+
 
 // 2023 approach
 var isValid = function(s) {

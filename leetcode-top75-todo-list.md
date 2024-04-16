@@ -175,12 +175,12 @@
 | [3Sum](https://leetcode.com/problems/3sum/) | Two Pointers | Med | N | 3/18/24
 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | Two Pointers | Med | Y | 3/19/24
 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) | Two Pointers | Hard | N | 3/19/24
-| [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | String | Easy | N | 2/22/24
 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Sliding Window | Easy | N | 2/5/24 | 3/8/24
 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Sliding Window | Med | N | 3/25/24
 | [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) | Sliding Window | Med | N | 3/25/24
 | [Permutation in String](https://leetcode.com/problems/permutation-in-string) | Sliding Window | Med | N | 3/28/24
 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) | Sliding Window | Hard | N | 4/2/24
+| [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | String | Easy | N | 2/22/24 | 4/15/24
 | [Employbee Bonus](https://leetcode.com/problems/employee-bonus/) | SQL | Easy | Y | 4/8/24
 | [Students and Examinations](https://leetcode.com/problems/students-and-examinations) | SQL | Easy | N | 4/8/24
 | [Manager >= 5 Direct Reports](https://leetcode.com/problems/managers-with-at-least-5-direct-reports/) | SQL | Med | Y | 4/8/24
