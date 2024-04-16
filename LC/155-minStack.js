@@ -21,6 +21,50 @@ minStack.top();      --> Returns 0.
 minStack.getMin();   --> Returns -2.
 */
 
+// april 15, 2024 soln
+var MinStack = function() {
+  // want to keep min as array for pop later
+  this.min = [];
+  this.stack = [];
+};
+
+/** 
+ * @param {number} val
+ * @return {void}
+ */
+MinStack.prototype.push = function(val) {
+  this.stack.push(val);
+  // need to adjust min accordinly
+  // scenarios:
+  // if min is empty or if curr min is less than new val
+  // can't do this.min[-1], not python
+  if (this.min.length === 0 || val <= this.min[this.min.length - 1]) this.min.push(val);
+};
+
+/**
+ * @return {void}
+ */
+MinStack.prototype.pop = function() {
+  let valToRm = this.stack.pop();
+  if (this.min[this.min.length - 1] === valToRm) this.min.pop();
+};
+
+/**
+ * @return {number}
+ */
+MinStack.prototype.top = function() {
+  return this.stack[this.stack.length - 1];
+};
+
+/**
+ * @return {number}
+ */
+MinStack.prototype.getMin = function() {
+  return this.min[this.min.length - 1];
+};
+
+
+// aug 17, 2023 soln
 var MinStack = function () {
   this.stack = [];
   this.min = []
