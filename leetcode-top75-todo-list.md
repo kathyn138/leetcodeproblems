@@ -182,6 +182,7 @@
 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) | Sliding Window | Hard | N | 4/2/24
 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | Stack | Easy | N | 2/22/24 | 4/15/24
 | [Min Stack](https://leetcode.com/problems/min-stack/) | Stack | Easy | N | 4/15/24
+| [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) | Stack | Med | Y | 4/16/24
 | [Employbee Bonus](https://leetcode.com/problems/employee-bonus/) | SQL | Easy | Y | 4/8/24
 | [Students and Examinations](https://leetcode.com/problems/students-and-examinations) | SQL | Easy | N | 4/8/24
 | [Manager >= 5 Direct Reports](https://leetcode.com/problems/managers-with-at-least-5-direct-reports/) | SQL | Med | Y | 4/8/24
