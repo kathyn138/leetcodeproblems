@@ -188,6 +188,7 @@
 | [Car Fleet](https://leetcode.com/problems/car-fleet/) | Stack | Med | N | 4/19/24
 | [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) | Stack | Hard | N | 4/19/24
 | [Binary Search](https://leetcode.com/problems/binary-search) | Binary Search | Easy | N | 6/10/24
+| [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) | Binary Search | Med | N | 6/10/24
 | [Employee Bonus](https://leetcode.com/problems/employee-bonus/) | SQL | Easy | Y | 4/8/24
 | [Students and Examinations](https://leetcode.com/problems/students-and-examinations) | SQL | Easy | N | 4/8/24
 | [Manager >= 5 Direct Reports](https://leetcode.com/problems/managers-with-at-least-5-direct-reports/) | SQL | Med | Y | 4/8/24

@@ -1,3 +1,44 @@
+// 2024 soln
+var searchMatrix = function(matrix, target) {
+  // do 2 binary searches, first to find searchRow then target
+  let start = 0; 
+  let end = matrix.length - 1;
+  
+  while (start <= end) {
+    let mid = start + Math.floor((end - start) / 2);
+    if (matrix[mid][0] === target) return true;
+  
+    if (target < matrix[mid][0]) {
+      end = mid - 1;
+    } else {
+      start = mid + 1;
+    }
+  }
+  
+  let searchRow = start + Math.floor((end - start) / 2);
+  // out of bounds
+  if (searchRow < 0) return false;
+  
+  
+  let left = 0; 
+  let right = matrix[0].length - 1;
+  
+  while (left <= right) {
+    let mid = left + Math.floor((right - left) / 2);
+    if (matrix[searchRow][mid] === target) return true;
+  
+    if (target < matrix[searchRow][mid]) {
+      right = mid - 1;
+    } else {
+      left = mid + 1;
+    }
+  }
+  
+  return false; 
+  };
+
+// 2023 soln
+
 // O(log n) soln, two binary searches
 // first is to find searchRow
 // second is to find target itself within each row
