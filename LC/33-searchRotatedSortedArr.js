@@ -28,8 +28,48 @@ Output: -1
  * @param {number} target
  * @return {number}
  */
-// NEWER SOLUTION 
 
+// 2024 soln
+var search = function(nums, target) {
+  let left = 0;
+  let right = nums.length - 1;
+
+  while (left <= right) {
+    let mid = left + Math.floor((right - left) / 2);
+
+    if (nums[mid] === target) return mid;
+
+    // figure out which sorted side we're on, left or right
+
+    // on sorted left side
+    if (nums[left] <= nums[mid]) {
+      // check which portion to look at
+      // search right portion
+      // if target < nums[left], means that not on left side so go right
+      if (target > nums[mid] || target < nums[left]) {
+        left = mid + 1;
+      } else {
+        right = mid - 1;
+      }
+    } else {
+      // on sorted right side
+
+      // search left portion 
+      // if target > nums[right], means that not on right side so go left
+      if (target < nums[mid] || target > nums[right]) {
+        right = mid - 1;
+      } else {
+        left = mid + 1;
+      }
+    }
+  }
+
+  return -1;
+};
+
+
+
+// 2023 soln 
 var search = function (nums, target) {
   // binary search 
   let head = 0;
