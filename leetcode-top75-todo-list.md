@@ -192,6 +192,7 @@
 | [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/) | Binary Search | Med | N | 6/10/24
 | [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | Binary Search | Med | Y | 6/11/24
 | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | Binary Search | Med | N | 6/11/24
+| [Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store/) | Binary Search | Med | N | 6/11/24
 | [Employee Bonus](https://leetcode.com/problems/employee-bonus/) | SQL | Easy | Y | 4/8/24
 | [Students and Examinations](https://leetcode.com/problems/students-and-examinations) | SQL | Easy | N | 4/8/24
 | [Manager >= 5 Direct Reports](https://leetcode.com/problems/managers-with-at-least-5-direct-reports/) | SQL | Med | Y | 4/8/24
