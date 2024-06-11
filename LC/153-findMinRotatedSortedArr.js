@@ -1,3 +1,24 @@
+// 2024 soln
+var findMin = function(nums) {
+  let left = 0; 
+  let right = nums.length - 1;
+  let min = nums[0];
+
+  while (left <= right) {
+    let mid = left + Math.floor((right - left) / 2);
+
+    if (nums[mid] < min) {
+      min = nums[mid];
+      right = mid - 1;
+    } else {
+      left = mid + 1;
+    }
+  }
+
+  return min;
+};
+
+// 2023 soln
 var findMin = function(nums) {
   let min = Infinity;
 
