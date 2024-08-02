@@ -73,10 +73,10 @@
 ## Interval
 
 - Easy
-  - [ ] [Meeting Rooms (Leetcode Premium)](https://leetcode.com/problems/meeting-rooms/)
+  - [x] [Meeting Rooms (Leetcode Premium)](https://leetcode.com/problems/meeting-rooms/)
 - Medium
   - [x] [Insert Interval](https://leetcode.com/problems/insert-interval/)
-  - [ ] [Meeting Rooms II (Leetcode Premium)](https://leetcode.com/problems/meeting-rooms-ii/)
+  - [x] [Meeting Rooms II (Leetcode Premium)](https://leetcode.com/problems/meeting-rooms-ii/)
   - [x] [Merge Intervals](https://leetcode.com/problems/merge-intervals/)
   - [x] [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)
 
@@ -197,6 +197,7 @@
 | [Reverse a Linked List](https://leetcode.com/problems/reverse-linked-list/) | Linked List | Easy | N | 7/11/24
 | [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals) | Intervals | Med | N | 8/2/24
 | [Meeting Rooms](https://www.lintcode.com/problem/920) | Intervals | Easy | Y | 8/2/24
+| [Meeting Rooms II](https://www.lintcode.com/problem/919/) | Intervals | Med | N | 8/2/24
 | [Employee Bonus](https://leetcode.com/problems/employee-bonus/) | SQL | Easy | Y | 4/8/24
 | [Students and Examinations](https://leetcode.com/problems/students-and-examinations) | SQL | Easy | N | 4/8/24
 | [Manager >= 5 Direct Reports](https://leetcode.com/problems/managers-with-at-least-5-direct-reports/) | SQL | Med | Y | 4/8/24
