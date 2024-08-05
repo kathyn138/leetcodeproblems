@@ -49,7 +49,7 @@
   - [ ] [Word Break Problem](https://leetcode.com/problems/word-break/)
   - [ ] [Coin Change](https://leetcode.com/problems/coin-change/)
   - [ ] [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)
-  - [ ] [Jump Game](https://leetcode.com/problems/jump-game/)
+  - [x] [Jump Game](https://leetcode.com/problems/jump-game/)
   - [ ] [Unique Paths](https://leetcode.com/problems/unique-paths/)
   - [ ] [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/)
   - [ ] [Combination Sum](https://leetcode.com/problems/combination-sum-iv/)
@@ -195,7 +195,8 @@
 | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | Binary Search | Med | N | 6/11/24
 | [Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store/) | Binary Search | Med | N | 6/11/24
 | [Reverse a Linked List](https://leetcode.com/problems/reverse-linked-list/) | Linked List | Easy | N | 7/11/24
-| [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | Intervals | Med | N | 8/2/24
+| [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | Greedy | Med | N | 8/2/24
+| [Jump Game](https://leetcode.com/problems/jump-game/) | Greedy | Med | N | 8/5/24
 | [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals) | Intervals | Med | N | 8/2/24
 | [Meeting Rooms](https://www.lintcode.com/problem/920) | Intervals | Easy | Y | 8/2/24
 | [Meeting Rooms II](https://www.lintcode.com/problem/919/) | Intervals | Med | N | 8/2/24
