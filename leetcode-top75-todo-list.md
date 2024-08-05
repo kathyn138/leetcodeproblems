@@ -43,7 +43,7 @@
 
 - Easy
   - [x] [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)
-  - [ ] [House Robber](https://leetcode.com/problems/house-robber/)
+  - [x] [House Robber](https://leetcode.com/problems/house-robber/)
 - Medium
   - [ ] [Decode Ways](https://leetcode.com/problems/decode-ways/)
   - [ ] [Word Break Problem](https://leetcode.com/problems/word-break/)
@@ -196,6 +196,7 @@
 | [Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store/) | Binary Search | Med | N | 6/11/24
 | [Reverse a Linked List](https://leetcode.com/problems/reverse-linked-list/) | Linked List | Easy | N | 7/11/24
 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | 1D Dynamic Programming | Easy | N | 8/5/24
+| [House Robber](https://leetcode.com/problems/house-robber/) | 1D Dynamic Programming | Med | N | 8/5/24
 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | Greedy | Med | N | 8/2/24
 | [Jump Game](https://leetcode.com/problems/jump-game/) | Greedy | Med | N | 8/5/24
 | [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals) | Intervals | Med | N | 8/2/24

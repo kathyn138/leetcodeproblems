@@ -31,28 +31,48 @@ Constraints:
 - 0 <= nums[i] <= 400
 */
 
-
+// 2024 soln
+// runtime: O(n)
+// for each value, keep track of previous house and house before prev
+// and decide max between beforePrev + curr house, or prev house
 var rob = function (nums) {
-  let currMax = 0; 
-  let prevMax = 0; 
+  // [beforePrev, prev, n, n+1, ...]
+  let beforePrev = 0;
+  let prev = 0;
+
+  for (let i = 0; i < nums.length; i++) {
+    let temp = Math.max(beforePrev + nums[i], prev);
+    // move / update pointers
+    beforePrev = prev;
+    prev = temp;
+  }
+
+  return prev;
+  // prev will be the last value and therefore will be max value u can rob from entire neighborhood
+};
+
+// 2020 soln
+var rob = function (nums) {
+  let currMax = 0;
+  let prevMax = 0;
 
   for (let i = 0; i < nums.length; i++) {
     // cant do prevMax = currMax bc prevMax used in comparison
     // at this point, prevMax !== currMax
     // store currMax as it'll become new prevMax
-    let temp = currMax; 
+    let temp = currMax;
     // currMax gets redefined
     // alternate between the maxes
-      // eg [1, 2, 3, 1]
-        // at i = 1, prevMax + 1 = 0 + 2
-        // currMax = 1
+    // eg [1, 2, 3, 1]
+    // at i = 1, prevMax + 1 = 0 + 2
+    // currMax = 1
     currMax = Math.max(prevMax + nums[i], currMax);
     // update prevMax
-    prevMax = temp; 
+    prevMax = temp;
   }
 
   return currMax;
 };
 
 // 4
-console.log(rob([1,2,3,1]))
+console.log(rob([1, 2, 3, 1]));
