@@ -53,7 +53,7 @@
   - [ ] [Unique Paths](https://leetcode.com/problems/unique-paths/)
   - [ ] [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/)
   - [ ] [Combination Sum](https://leetcode.com/problems/combination-sum-iv/)
-  - [ ] [House Robber II](https://leetcode.com/problems/house-robber-ii/)
+  - [x] [House Robber II](https://leetcode.com/problems/house-robber-ii/)
 
 
 ## Graph
@@ -197,6 +197,7 @@
 | [Reverse a Linked List](https://leetcode.com/problems/reverse-linked-list/) | Linked List | Easy | N | 7/11/24
 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | 1D Dynamic Programming | Easy | N | 8/5/24
 | [House Robber](https://leetcode.com/problems/house-robber/) | 1D Dynamic Programming | Med | N | 8/5/24
+| [House Robber II](https://leetcode.com/problems/house-robber-ii/) | 1D Dynamic Programming | Med | Y | 8/5/24
 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | Greedy | Med | N | 8/2/24
 | [Jump Game](https://leetcode.com/problems/jump-game/) | Greedy | Med | N | 8/5/24
 | [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals) | Intervals | Med | N | 8/2/24
