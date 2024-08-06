@@ -1,3 +1,29 @@
+// 2024 soln
+// runtime: O(n^2)
+var countSubstrings = function(s) {
+  let res = 0;
+
+  function checkPalindrome(left, right) {
+    while (left >= 0 && right < s.length && s[left] === s[right]) {
+      res++;
+      left--;
+      right++;
+    }
+  }
+
+  for (let i = 0; i < s.length; i++) {
+    let left = i; 
+    let right = i;
+
+    checkPalindrome(left, right);
+    checkPalindrome(left, right + 1);
+  }
+
+  return res;
+};
+
+
+// 2020 soln
 /*
 THIS HAS BOTH RECURSIVE AND BRUTE FORCE APPROACHES.
 

@@ -114,7 +114,7 @@
   - [x] [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
   - [x] [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)
   - [x] [Group Anagrams](https://leetcode.com/problems/group-anagrams/)
-  - [ ] [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)
+  - [x] [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)
   - [x] [Encode and Decode Strings (Leetcode Premium)](https://leetcode.com/problems/encode-and-decode-strings/)
 - Hard
   - [x] [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)
@@ -199,6 +199,7 @@
 | [House Robber](https://leetcode.com/problems/house-robber/) | 1D Dynamic Programming | Med | N | 8/5/24
 | [House Robber II](https://leetcode.com/problems/house-robber-ii/) | 1D Dynamic Programming | Med | Y | 8/5/24
 | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | 1D Dynamic Programming | Med | N | 8/6/24
+| [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/) | 1D Dynamic Programming | Med | Y | 8/6/24
 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | Greedy | Med | N | 8/2/24
 | [Jump Game](https://leetcode.com/problems/jump-game/) | Greedy | Med | N | 8/5/24
 | [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals) | Intervals | Med | N | 8/2/24
