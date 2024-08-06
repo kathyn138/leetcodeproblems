@@ -45,7 +45,7 @@
   - [x] [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)
   - [x] [House Robber](https://leetcode.com/problems/house-robber/)
 - Medium
-  - [ ] [Decode Ways](https://leetcode.com/problems/decode-ways/)
+  - [x] [Decode Ways](https://leetcode.com/problems/decode-ways/)
   - [ ] [Word Break Problem](https://leetcode.com/problems/word-break/)
   - [ ] [Coin Change](https://leetcode.com/problems/coin-change/)
   - [ ] [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)
@@ -200,6 +200,7 @@
 | [House Robber II](https://leetcode.com/problems/house-robber-ii/) | 1D Dynamic Programming | Med | Y | 8/5/24
 | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | 1D Dynamic Programming | Med | N | 8/6/24
 | [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/) | 1D Dynamic Programming | Med | Y | 8/6/24
+| [Decode Ways](https://leetcode.com/problems/decode-ways/) | 1D Dynamic Programming | Med | N | 8/6/24
 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | Greedy | Med | N | 8/2/24
 | [Jump Game](https://leetcode.com/problems/jump-game/) | Greedy | Med | N | 8/5/24
 | [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals) | Intervals | Med | N | 8/2/24
