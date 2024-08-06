@@ -198,6 +198,7 @@
 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | 1D Dynamic Programming | Easy | N | 8/5/24
 | [House Robber](https://leetcode.com/problems/house-robber/) | 1D Dynamic Programming | Med | N | 8/5/24
 | [House Robber II](https://leetcode.com/problems/house-robber-ii/) | 1D Dynamic Programming | Med | Y | 8/5/24
+| [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | 1D Dynamic Programming | Med | N | 8/6/24
 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | Greedy | Med | N | 8/2/24
 | [Jump Game](https://leetcode.com/problems/jump-game/) | Greedy | Med | N | 8/5/24
 | [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals) | Intervals | Med | N | 8/2/24
